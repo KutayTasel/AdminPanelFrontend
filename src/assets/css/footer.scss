@@ -1,0 +1,119 @@
+.footer {
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 4, 40, 0.95),
+    rgba(0, 78, 146, 0.95),
+    rgba(0, 180, 219, 0.95),
+    rgba(142, 68, 173, 0.95),
+    rgba(192, 108, 132, 0.95)
+  );
+  background-size: 400% 400%;
+  animation: gradientWave 15s ease infinite;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1000;
+  padding: 10px;
+
+  .footer-content {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+
+    p {
+      margin: 0;
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.8);
+      transition: color 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        color: #ffffff;
+        transform: scale(1.05);
+      }
+    }
+
+    .social-icons {
+      margin-top: 10px;
+      display: flex;
+      gap: 15px;
+
+      a {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        color: #ffffff;
+        font-size: 18px;
+        transition: background 0.3s ease, transform 0.3s ease;
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.3);
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    height: 70px;
+    font-size: 14px;
+
+    .footer-content p {
+      font-size: 14px;
+    }
+
+    .social-icons a {
+      width: 35px;
+      height: 35px;
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    height: 60px;
+    font-size: 12px;
+
+    .footer-content p {
+      font-size: 12px;
+    }
+
+    .social-icons a {
+      width: 30px;
+      height: 30px;
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    height: 50px;
+    font-size: 10px;
+
+    .footer-content p {
+      font-size: 10px;
+    }
+
+    .social-icons a {
+      width: 25px;
+      height: 25px;
+      font-size: 12px;
+    }
+  }
+}
+
+@keyframes gradientWave {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
