@@ -1,0 +1,64 @@
+# Node.js modülleri
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Çıkış dosyaları
+dist/
+build/
+out/
+
+# İşletim sistemi ve editör dosyaları
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.log
+
+# Çevre değişkeni dosyaları
+.env
+.env.*.local
+
+# Temporary files
+temp/
+tmp/
+
+# Test coverage
+coverage/
+
+# Logs
+logs/
+*.log
+logs/*.log
+
+# Paket yöneticisi cache
+.npm/
+.pnpm-debug.log*
+.yarn/
+.yarn-cache/
+.yarn-debug.log*
+.pnpm-store/
+
+# IDE ve editör dosyaları
+.vscode/
+.idea/
+*.iml
+
+# TypeScript
+*.tsbuildinfo
+
+# Next.js
+.next/
+
+# Nuxt.js
+.nuxt/
+
+# SvelteKit
+.svelte-kit/
+
+# React Native
+.expo/
+.expo-shared/
+web-build/
